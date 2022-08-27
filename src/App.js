@@ -23,3 +23,7 @@ function App() {
 }
 
 export default App;
+
+import {render, renderIntoDocument,ItemListContainer} from './components/ItemListContainer.js';
+import {NavBar, render} from './components/CartWidget.js'
+
