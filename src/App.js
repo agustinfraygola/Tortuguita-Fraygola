@@ -1,5 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import {ItemListContainer} from './components/ItemListContainer.js';
+import {NavBar} from './components/NavBar.js'
+
+const renderLogo = getElementById('logo');
+const renderItemListContainer = getElementById('ItemListContainer');
+
+root.render(renderLogo);
+root.render(renderItemListContainer);
+
+const root = ReactDOM.createRoot(
+  document.getElementById('root')
+);
+
 
 function App() {
   return (
@@ -17,13 +30,12 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header>   
     </div>
+   
   );
 }
+<><NavBar /><ItemListContainer /></>
 
 export default App;
-
-import {render, renderIntoDocument,ItemListContainer} from './components/ItemListContainer.js';
-import {NavBar, render} from './components/CartWidget.js'
 

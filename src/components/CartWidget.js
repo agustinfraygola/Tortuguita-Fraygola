@@ -1,17 +1,14 @@
 import { render } from "@testing-library/react";
 
-function NavBar() {
-    return<>
-        <img className="cartImage" src="./images/cart.png" alt="cart image"/>
-        <h3>Tortuguita empanadas</h3>
-        <CartWidget/>
+export class CartWidget {
+    render(){
+        return(
+          <div>
+           <img className="cartImage" src="./images/cart.png" alt="cart image"/> 
 
-    </>;
-
+          </div>
+        );
+    }
 }
 
-<NavBar/>
-
-render=(<cartImage />, document.getElementById('root'));
-
-export{NavBar, render}
+//falta agregarle el bootstrap a la imagen, ponerle algo tipo el width y el height
