@@ -1,9 +1,9 @@
 import {Item} from './Item'
 
-function ItemList( Item ){
-    let DatosEmpanadas = empanadas.map(function(empanadas))
-    setTimeout
-
+const ItemList = ({sabores} => {
+    return (
+        <div>
+            {sabores.map(c=> <li> key={s.id}>{s}</li>)}
+        </div>
+    )
 }
-
-setTimeout(function(){ItemList }, 2000);
